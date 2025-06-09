@@ -11,7 +11,7 @@ google_maps_api_key = os.environ.get("GOOGLE_MAPS_API_KEY")
 
 root_agent = LlmAgent(
     model='gemini-2.0-flash',
-    name='maps_assistant_agent',
+    name='google_maps_agent',
     instruction='Help the user with mapping, directions, and finding places using Google Maps tools.',
     tools=[
         MCPToolset(
